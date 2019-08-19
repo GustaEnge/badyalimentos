@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/contato.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <title>Bady Alimentos</title>
+</head>
+<body>
+  <div class="fundo">
+    <header class="menu-principal">
+      <main>
+        <div class="logo">
+          <img src="./img/logo.png" alt="Bady Alimentos"/>
+          <!-- colocar o link na logo, apontando para a Home-->
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a class="effect-b" href="index.html#emp" data-toggle="tooltip" data-placement="bottom" title="Conheça a nossa empresa">Empresa</a></li>
+            <li id="menu_produtos">
+              <a class="effect-b" href="#produtos" data-toggle="tooltip" data-placement="bottom" title="Nossos produtos">Produtos</a>
+              <div class="menu_prod">
+                <a href = "index.html#mod">Modo de Preparo</a>
+              </div>
+            </li>
+            <li><a class="effect-b" href="contato.html#contato" data-toggle="tooltip" data-placement="bottom" title="Entre em contato">Contato</a></li>
+          </ul>
+        </div>
+      </main>
+    </header>
+  </div>
+  <div class="contato-1" id="contato">
+    <h1 style="color:#d3251c; text-align:center;">Contato</h1>
+    <div class="form-1">
+
+        <p style="color:#d3251c; margin-left:10px; margin-top:5px;">Preencha corretamente os campos abaixo.</p>
+
+
+      <form action="">
+        <fieldset>
+          <input id="nome_input" type="text" name="nome" placeholder="Nome" pattern="[A-Za-z]*" autocomplete="off" required>
+          <input id="email_input" type="email" name="email" placeholder="Email" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <input id="telefone_input" type="tel" name="telefone" placeholder="Telefone" pattern="[0-9]" datamask = "(99) 99999-9999" autocomplete="off" required>
+          <select id="assunto_input" requiredd>
+              <option value="0">Selecione a opção:</option>
+              <option value="1">Contato Comercial</option>
+              <option value="2">Imprensa</option>
+              <option value="3">Dúvidas, sugestões e críticas (SAC)</option>
+              <option value="4">Outros</option>
+          </select>
+
+          <textarea id="mensagem_input" name="mensagem" placeholder="Mensagem" rows="6"style="resize:none;" required></textarea>
+          <input type="submit" value="Enviar" id="botao-form">
+        </fieldset>
+      </form>
+      <p></p>
+    </div>
+    <div class="quadro_img">
+      <!--<span>Mostra</span>-->
+      <img src="./img/mostruario.jpg" alt="Mostruário" id="mostruario">
+      <p style="color:#d3251c">Fale conosco! Caso tenha alguma dúvida, sugestão, reclamação ou pedido estamos aqui para atendê-lo!</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-bady">
+      <p style="margin-top:5px;"> M. C. Bady Comércio e Indústria de Alimentos Ltda-ME &copy; 2019 TODOS OS DIREITOS RESERVADOS.</p>
+      <hr id = "linha">
+      <p>Rua Antônio Vieira Coelho, 816 - Jd. Água Limpa II      CEP 15.115-000- Bady Bassitt-SP</p>
+      <span>Contato: (17) 3258 2122 </span> | <a href="mailto:badyalimentos@uol.com.br" style="color:#fff;">badyalimentos@uol.com.br</a>
+
+    </div>
+    <div class="copyright">
+      <small> 2019 / Bady Alimentos / Desenvolvido por Kamaleon</small>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

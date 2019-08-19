@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <!--<link rel="stylesheet" type="text/css" href="slick/slick.css"/>-->
+  <!--<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+  <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+
+  <title>Bady Alimentos</title>
+</head>
+<body>
+  <div class="fundo">
+    <header class="menu-principal">
+      <main>
+        <div class="logo">
+          <img src="./img/logo.png" alt="Bady Alimentos"/>
+          <!-- colocar o link na logo, apontando para a Home-->
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a class="effect-b" href="#emp" data-toggle="tooltip" data-placement="bottom" title="Conheça a nossa empresa">Empresa</a></li>
+            <li id="menu_produtos">
+              <a class="effect-b" href="#produtos" data-toggle="tooltip" data-placement="bottom" title="Nossos produtos">Produtos</a>
+              <div class="menu_prod">
+                <a href = "#mod" >Modo de Preparo</a>
+              </div>
+            </li>
+            <li><a class="effect-b" href="contato.html#contato" data-toggle="tooltip" data-placement="bottom" title="Entre em contato">Contato</a></li>
+
+          </ul>
+        </div>
+      </main>
+    </header>
+  </div>
+  <div class="empresa" id="emp">
+    <h1 style="color: #d3251c;">Empresa</h1>
+    <div class="btexto1">
+      <!--<span class = "sobre_empresa">Sobre Nós</span>-->
+      <span id = "bg_text_sobre" onmousemove ="sobreMoving()" >
+        <p>A <span class = "keyword">Bady Alimentos</span> é uma empresa especializada na produção de pão de alho e  está localizada na cidade de <span class = "keyword">Bady Bassitt</span >, nos arredores de São José do Rio Preto (noroeste do estado paulista).
+        </p>
+        <p>Geograficamente falando, está posicionada para fornecer seus produtos para todo o Estado de São Paulo, de Mato Grosso do Sul, Minas Gerais, Goiás e Paraná. Vendemos produtos também para
+        o Maranhão e Piauí.
+        </p>
+      </span>
+    </div>
+    <div class="btexto2">
+      <!--<span class= "historia_empresa">História</span>-->
+      <span id = "bg_text_historia" onmousemove ="historiaMoving()">
+        <p>A empresa iniciou suas atividades em 20/05/2008.  A produção resumia-se em pouco mais de 150 bandejas de pães de alho por dia, possuindo apenas três funcionários.  Hoje, com quase 11 anos de existência, produz mais de 4000 bandejas de pão de alho por dia, contando atualmente com 22 funcionários.
+        </p>
+      </span>
+    </div>
+    <div class="img-em">
+      <img id = "img-bady" src="./img/logo3.jpg">
+    </div>
+  </div>
+
+  <div class="produto" id="produtos">
+    <h1>Produtos</h1>
+    <div class="fundo_slider">
+      <button id="ant" onclick="plusSlides(-1)">&lt;</button>
+      <button id="prox" onclick="plusSlides(1)">&gt;</button>
+
+
+      <div class="slider">
+        <img class = "prod" src=".\img\carrossel\paes.png" id="paes_img">
+        <img class = "prod" src=".\img\carrossel\pao_requeijao.png" id="requeijao">
+        <img class = "prod" src=".\img\carrossel\pao_tradicional.png" id="tradicional">
+        <img class = "prod" src=".\img\carrossel\pao_picante.png" id="picante">
+
+      </div>
+      <div class= "dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="info_slider">
+
+        <table id="tabela_prod">
+          <thead>
+            <tr>
+              <td colspan="3" style="background-color:#4CAF50; color:#fff; text-align:center;font-weight: bold;">Informação Nutricional</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="background-color:#4CAF50; color:#fff; text-align:center;font-weight: bold;">| Porção de 50g - 1 Unidade |</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color:#4CAF50; color:#fff; text-align:right;font-weight: bold;">%VD(*)</td>
+              <td colspan="2" style="background-color:#4CAF50; color:#fff; text-align:center;font-weight: bold;">Quantidade por porção</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11%</td>
+              <td>299kcal</td>
+              <td>Valor Calórico</td>
+            </tr>
+            <tr>
+              <td>8%</td>
+              <td>23g</td>
+              <td>Carboidrato</td>
+            </tr>
+            <tr>
+              <td>7%</td>
+              <td>5g</td>
+              <td>Proteínas</td>
+            </tr>
+            <tr>
+              <td>24%</td>
+              <td>13g</td>
+              <td>Gorduras Totais</td>
+            </tr>
+            <tr>
+              <td>0%</td>
+              <td>0g</td>
+              <td>Gorduras Saturadas</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>0g</td>
+              <td>Gorduras Trans</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>8g</td>
+              <td>Colesterol</td>
+            </tr>
+            <tr>
+              <td>4%</td>
+              <td>1g</td>
+              <td>Fibra Alimentar</td>
+            </tr>
+            <tr>
+              <td>0,50%</td>
+              <td>4mg</td>
+              <td>Cálcio</td>
+            </tr>
+            <tr>
+              <td>10%</td>
+              <td>1,34mg</td>
+              <td>Ferro</td>
+            </tr>
+            <tr>
+              <td>17%</td>
+              <td>399mg</td>
+              <td>Sódio</td>
+            </tr>
+            <tr>
+              <td>37%</td>
+              <td>72mg</td>
+              <td>Ácido Fólico</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" style="font-size: 15px;background-color:#4CAF50; color:#fff; text-align:center;font-weight: bold;">(**) Valores diários de referência não estabelecidos</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modo_preparo" id="mod">
+    <h1>Modo de Preparo</h1>
+    <div class="modo_preparo_1"  id="mod1">
+      <p>Asse por aproximadamente 1 minuto com o corte para baixo, quando começar a pingar o queijo, vire, asse por mais 2 a 3 minutos, vire novamente até dourar.</p>
+    </div>
+    <div class="modo_preparo_2"  id="mod2">
+      <p>Preaqueça! Asse por aproximadamente 3 minutos.</p>
+    </div>
+    <div class="modo_preparo_3"  id="mod3">
+      <p>Preaqueça! Asse por aproximadamente 5 minutos.</p>
+    </div>
+    <div class="modo_preparo_4"  id="mod4">
+      <p>Preaqueça! Asse por aproximadamente 1 minuto, vire, asse por mais 2 minutos, vire e asse por mais 1 minuto.</p>
+    </div>
+    <div class="modo_preparo_5"  id="mod5">
+      <span>VALIDADE</span>
+      <img src="" alt="">
+      <p>A validade dos nossos produtos vem expressa na embalagem, sendo contada a partir da informação da data de fabricação. Para os pães de alho, a validade é de 60 dias se resfriado abaixo de 10ºC ou de 180 dias se congelado a -5ºC. A data de fabricação para os pães de alho encontra-se estampada na lateral da embalagem plástica.</p>
+    </div>
+    <div class="modo_preparo_6"  id="mod6">
+      <p style="margin-top:205px;text-align:center;"></p>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bady">
+      <p style="margin-top:5px;"> M. C. Bady Comércio e Indústria de Alimentos Ltda-ME &copy; 2019 TODOS OS DIREITOS RESERVADOS.</p>
+      <hr id = "linha">
+      <p>Rua Antônio Vieira Coelho, 816 - Jd. Água Limpa II      CEP 15.115-000- Bady Bassitt-SP</p>
+      <span>Contato: (17) 3258 2122 </span> | <a href="mailto:badyalimentos@uol.com.br" style="color:#fff;">badyalimentos@uol.com.br</a>
+
+    </div>
+    <div class="copyright">
+      <small> 2019 / Bady Alimentos / Desenvolvido por Kamaleon</small>
+    </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "produtos":
+  [
+      "paes":"Como já dito antes, o nosso produto principal é o pão de alho.  Mas afinal, o que é pão de alho? O pão de alho da Bady Alimentos é um pão salgado, da família do pão francês, que é pré-assado e recheado e coberto com um patê de alho, acrescido de muita muçarela, com sabor na medida exata para agradar a todos os paladares.
+              O patê é inserido no pão através de máquina específica, que garante maior uniformidade da quantidade e dos produtos.Utilizamos somente margarina como base de nosso patê, sem o acréscimo de agua e outros espessantes, o que faz com que nossos produtos sejam considerados como gourmet, trazendo sabor, aspecto e qualidades inigualáveis",
+      "tradicional":
+      {
+        "nome":"Pão de Alho",
+        "recheio":"patê de alho natural",
+        "composição":"farinha de trigo, sal, óleo, margarina, fermento, salsa, queijo mussarela,cebola em folha, alho e conservante(propianato de cálcio biológico)",
+        "qtd-peso":"5 pães - 360g",
+        "obs": "contém glúten",
+        "embalagem":"roxa"
+      },
+      "picante":
+      {
+        "nome":"Pão de Alho",
+        "recheio":"picante",
+        "composição":"possui todos os ingredientes encontrados no Tradicional, com o adicional de pimenta vermelha",
+        "qtd-peso":"5 pães - 360g",
+        "obs": "contém glúten",
+        "embalagem":"vermelha"
+      },
+      "requeijao":
+      {
+        "nome":"Pão de Alho",
+        "recheio":"requeijão",
+        "composição":"possui todos os ingredientes encontrados no Tradicional e é recheado com requeijão cremoso",
+        "qtd-peso":"5 pães - 390g",
+        "obs": "contém glúten",
+        "embalagem":"amarelo"
+      }
+  ]
+
+}
